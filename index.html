@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>OSU Carpentry</title>
+    <style type="text/css">
+        a {color:#FF7300; text-decoration:none;}
+        a:hover {color:#ffffff; background-color:#FF7300;}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="github-org.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#org-github-projects").loadRepositories("osu-carpentry");
+        });
+    </script>
+</head>
+<body style="background:#bebebe">
+    <div id="page-wrapper" style="background:#ffffff;width:900px;margin:auto;padding:10px;">
+        <div id="header-wrapper" style="padding:10px;overflow:auto;">
+            <img src="hammer-orange.png" style="float:left">
+            <h1>Carpentries @ Oklahoma State University</h1>
+        </div>
+        <br/>
+        <div id="content-wrapper" style="padding:10px;">
+            <h2>Upcoming and Recent Workshops</h2>
+            <div id="org-github-projects"></div>
+        </div>
+        <br/>
+        <div id="footer-wrapper"></div>
+    </div>
+</body>
+</html>
