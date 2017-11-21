@@ -10,6 +10,9 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("#org-github-projects").loadRepositories("osu-carpentry");
+            $.get("about-us.html", function(data) {
+                $("#about-us").html(data);
+            });
         });
     </script>
 </head>
@@ -25,6 +28,10 @@
             <div id="org-github-projects"></div>
         </div>
         <br/>
+        <div id="about-wrapper" style="padding:10px;">
+            <h2>About Us</h2>
+            <div id="about-us"></div>
+        </div>
         <div id="footer-wrapper"></div>
     </div>
 </body>
