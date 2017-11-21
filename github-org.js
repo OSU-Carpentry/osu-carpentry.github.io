@@ -16,7 +16,8 @@ jQuery.fn.loadRepositories = function(orgname) {
         $(repos).each(function() {
             //if (this.name != (orgname.toLowerCase()+'.github.io')) {
             if (this.homepage && this.name.match(/^20[0-9][0-9]-[01][0-9]-[0-3][0-9]-.*$/)) {
-                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
+                //list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
+                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a></dt>');
                 list.append('<dd>' + this.description +'</dd>');
             }
         });     
