@@ -10,7 +10,7 @@
     <script src="workshop-repos.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#org-github-projects").loadRepositories("osu-carpentry");
+            $("#org-github-projects").loadWorkshopRepositories("osu-carpentry");
             $.get("about-us.html", function(data) {
                 $("#about-us").html(data);
             });
