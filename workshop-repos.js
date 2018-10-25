@@ -1,5 +1,5 @@
 jQuery.githubOrg = function(orgname, callback) {
-   jQuery.getJSON('https://api.github.com/orgs/'+orgname+'/repos?per_page=100?callback=?',callback)
+   jQuery.getJSON('https://api.github.com/orgs/'+orgname+'/repos?per_page=100&callback=?',callback)
 }
  
 jQuery.fn.loadWorkshopRepositories = function(orgname) {
